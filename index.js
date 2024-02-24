@@ -4,7 +4,8 @@
 // - 박스0,1,2에 붙어있던 show 클래스명 전부 제거하라고 코드 3줄 짜기
 // - 박스0에 show 클래스명 부착
 
-for(let i = 0; i < 4; i++){
+
+for(let i = 0; i < $('.tab-button').length; i++){
 
 $('.tab-button').eq(i).on('click', function(){
     $('.tab-button').removeClass('orange');
