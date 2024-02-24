@@ -32,6 +32,7 @@ ul.list::after {
     border-left: 1px solid #ccc;
     color: black;
     margin-top: -2px;
+    background-color: orange;
 }
 
 .tab-content {
