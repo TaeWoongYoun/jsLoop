@@ -5,17 +5,25 @@
 // - 박스0에 show 클래스명 부착
 
 
-for(let i = 0; i < $('.tab-button').length; i++){
+// for(let i = 0; i < $('.tab-button').length; i++){
 
-$('.tab-button').eq(i).on('click', function(){
-    $('.tab-button').removeClass('orange');
-    $('.tab-button').eq(i).addClass('orange');
-    $('.tab-content').removeClass('show');
-    $('.tab-content').eq(i).addClass('show');
+//     $('.tab-button').eq(i).on('click', function(){
+//     탭열기(i)
+//     })
+// }
+
+$('.list').click(function(e){
+    if(e.target == document.querySelectorAll('.tab-button')[0]){
+        탭열기(0)
+    }
 })
+
+function 탭열기(num){
+    $('.tab-button').removeClass('orange');
+    $('.tab-button').eq(num).addClass('orange');
+    $('.tab-content').removeClass('show');
+    $('.tab-content').eq(num).addClass('show');
 }
-
-
 
 
 // $('.tab-button').eq(1).on('click', function(){
