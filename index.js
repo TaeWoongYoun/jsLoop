@@ -25,12 +25,17 @@ function 탭열기(num){
     $('.tab-content').eq(num).addClass('show');
 }
 
-// array 자료형
-var car = ['소나타', 50000, 'white'];
-//자료 추가 방법
-car[3] = '아반떼';
-console.log(car[3]);
+// // array 자료형 + 자료간 정렬 가능, 중간에 자르기 가능
+// var car = ['소나타', 50000, 'white'];
+// //자료 추가 방법
+// car[3] = '아반떼';
+// console.log(car[3]);
 
+// //object 자료형
+var car2 = {name : '소나타', price : 50000}
+
+// car2.price = 60000; 
+// console.log(car2.name);
 
 // $('.tab-button').eq(1).on('click', function(){
 //     $('.tab-button').removeClass('orange');
