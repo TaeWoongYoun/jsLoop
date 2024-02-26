@@ -25,6 +25,12 @@ function 탭열기(num){
     $('.tab-content').eq(num).addClass('show');
 }
 
+// array 자료형
+var car = ['소나타', 50000, 'white'];
+//자료 추가 방법
+car[3] = '아반떼';
+console.log(car[3]);
+
 
 // $('.tab-button').eq(1).on('click', function(){
 //     $('.tab-button').removeClass('orange');
