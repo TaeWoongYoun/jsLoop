@@ -33,7 +33,8 @@ function 탭열기(num){
 
 // //object 자료형
 var car2 = {name : '소나타', price : 50000}
-
+document.getElementById("name").innerHTML = car2.name;
+document.getElementById("price").innerHTML = car2.price;
 // car2.price = 60000; 
 // console.log(car2.name);
 
