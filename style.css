@@ -43,3 +43,11 @@ ul.list::after {
 .show {
     display: block;
 }
+
+#sel{
+    display: none;
+}
+
+.add{
+    display: block;
+}
