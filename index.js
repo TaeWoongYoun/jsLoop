@@ -12,32 +12,37 @@
 //     })
 // }
 
-$('.list').click(function(e){
+// $('.list').click(function(e){
     
-        탭열기(e.target.dataset.id)
+//         탭열기(e.target.dataset.id)
     
-})
+// })
 
-function 탭열기(num){
-    $('.tab-button').removeClass('orange');
-    $('.tab-button').eq(num).addClass('orange');
-    $('.tab-content').removeClass('show');
-    $('.tab-content').eq(num).addClass('show');
-}
+// function 탭열기(num){
+//     $('.tab-button').removeClass('orange');
+//     $('.tab-button').eq(num).addClass('orange');
+//     $('.tab-content').removeClass('show');
+//     $('.tab-content').eq(num).addClass('show');
+// }
 
-// // array 자료형 + 자료간 정렬 가능, 중간에 자르기 가능
-// var car = ['소나타', 50000, 'white'];
-// //자료 추가 방법
-// car[3] = '아반떼';
-// console.log(car[3]);
+// // // array 자료형 + 자료간 정렬 가능, 중간에 자르기 가능
+// // var car = ['소나타', 50000, 'white'];
+// // //자료 추가 방법
+// // car[3] = '아반떼';
+// // console.log(car[3]);
 
-// //object 자료형
-var car2 = {name : '소나타', price : [50000, 3000, 40000]}
-// document.getElementById("name").innerHTML = car2.name;
-document.getElementById("price").innerHTML = car2.price[0];
-// car2.price = 60000; 
+// // //object 자료형
+// var car2 = {name : '소나타', price : [50000, 3000, 40000]}
+// // document.getElementById("name").innerHTML = car2.name;
+// document.getElementById("price").innerHTML = car2.price[0];
+// // car2.price = 60000; 
 // console.log(car2.name);
 
+var products = [
+    { id : 0, price : 70000, title : 'Blossom Dress' },
+    { id : 1, price : 50000, title : 'Springfield Shirt' },
+    { id : 2, price : 60000, title : 'Black Monastery' }
+];
 // $('.tab-button').eq(1).on('click', function(){
 //     $('.tab-button').removeClass('orange');
 //     $('.tab-button').eq(1).addClass('orange');
