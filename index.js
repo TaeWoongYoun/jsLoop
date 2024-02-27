@@ -43,6 +43,19 @@ var products = [
     { id : 1, price : 50000, title : 'Springfield Shirt' },
     { id : 2, price : 60000, title : 'Black Monastery' }
 ];
+
+document.querySelectorAll('.card-body h5')[0].innerHTML = products[0].title;
+document.querySelectorAll('.card-body p')[0].innerHTML = ' 가격 : ' + products[0].price;
+
+document.querySelectorAll('.card-body h5')[1].innerHTML = products[1].title;
+document.querySelectorAll('.card-body p')[1].innerHTML = ' 가격 : ' + products[1].price;
+
+document.querySelectorAll('.card-body h5')[2].innerHTML = products[2].title;
+document.querySelectorAll('.card-body p')[2].innerHTML = ' 가격 : ' + products[2].price;
+
+// `문자${a}문자`
+// console.log(products[0].title);
+
 // $('.tab-button').eq(1).on('click', function(){
 //     $('.tab-button').removeClass('orange');
 //     $('.tab-button').eq(1).addClass('orange');
