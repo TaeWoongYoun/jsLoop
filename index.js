@@ -53,10 +53,22 @@ document.querySelectorAll('.card-body p')[1].innerHTML = ' 가격 : ' + products
 document.querySelectorAll('.card-body h5')[2].innerHTML = products[2].title;
 document.querySelectorAll('.card-body p')[2].innerHTML = ' 가격 : ' + products[2].price;
 
-$('.first').click(function() {
-    // 클릭 이벤트가 발생했을 때 실행할 코드
-    $('#sel').addClass('add');
+// $('.first').click(function() {
+//     // 클릭 이벤트가 발생했을 때 실행할 코드
+//     $('#sel').addClass('add');
+// });
+
+
+$('.form-select').eq(0).on('input', function(){
+
+    var value = $('.form-select').eq(0).val();
+    if (value == '셔츠') {
+        $('.form-select').eq(1).removeClass('form-hide');
+    }
+
 });
+
+
 
 // `문자${a}문자`
 // console.log(products[0].title);

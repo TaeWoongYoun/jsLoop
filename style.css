@@ -44,10 +44,6 @@ ul.list::after {
     display: block;
 }
 
-#sel{
+.form-hide{
     display: none;
-}
-
-.add{
-    display: block;
 }
