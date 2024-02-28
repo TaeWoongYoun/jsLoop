@@ -77,8 +77,9 @@ $('.form-select').eq(0).on('input', function(){
 
 });
 
-
-
+var a = document.createElement('p');
+a.innerHTML = '안녕';
+document.querySelector('#test').appendChild(a);
 // `문자${a}문자`
 // console.log(products[0].title);
 
