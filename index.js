@@ -59,7 +59,7 @@ document.querySelectorAll('.card-body p')[2].innerHTML = ' 가격 : ' + products
 // });
 
 
-$('.form-select').eq(0).on('input', function(){
+$('.form-select').eq(0).on('change', function(){
 
     var value = $('.form-select').eq(0).val();
     if (value == '셔츠') {

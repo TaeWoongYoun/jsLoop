@@ -45,5 +45,5 @@ ul.list::after {
 }
 
 .form-hide{
-    display: none;
+    visibility: hidden;
 }
