@@ -59,11 +59,20 @@ document.querySelectorAll('.card-body p')[2].innerHTML = ' 가격 : ' + products
 // });
 
 
-$('.form-select').eq(0).on('change', function(){
+$('.form-select').eq(0).on('input', function(){
 
     var value = $('.form-select').eq(0).val();
     if (value == '셔츠') {
         $('.form-select').eq(1).removeClass('form-hide');
+    }
+
+});
+
+$('.form-select').eq(0).on('input', function(){
+
+    var value = $('.form-select').eq(0).val();
+    if (value == '모자') {
+        $('.form-select').eq(1).addClass('form-hide');
     }
 
 });
