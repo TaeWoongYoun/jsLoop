@@ -73,13 +73,21 @@ $('.form-select').eq(0).on('input', function(){
     var value = $('.form-select').eq(0).val();
     if (value == '모자' || value == '바지') {
         $('.form-select').eq(1).addClass('form-hide');
+    } else if(value == '바지'){
+        $('.form-select').eq(1).addClass('form-hide');
+        var 템플릿 = `<option>95</option>
+            <option>100</option>`;
+        $('.form-select').eq(1).append(템플릿);
     }
 
 });
 
-var 템플릿 = '<p>안녕</p>'
-document.querySelector('#test').insertAdjacentHTML('beforeend', 템플릿);
+// var 셀렉트 = '<option>28</option> <option>30</option>'
+// document.querySelectorAll('.form-select').innerHTML = 셀렉트;
 
+// html에 문서 추가 방법
+// var 템플릿 = '<p>안녕</p>'
+// document.querySelector('#test').insertAdjacentHTML('beforeend', 템플릿);
 // var a = document.createElement('p');
 // a.innerHTML = '안녕';
 // document.querySelector('#test').appendChild(a);

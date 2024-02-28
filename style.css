@@ -47,3 +47,7 @@ ul.list::after {
 .form-hide{
     visibility: hidden;
 }
+
+.hide{
+    visibility: hidden;
+}
