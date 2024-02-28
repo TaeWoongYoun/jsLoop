@@ -71,7 +71,7 @@ $('.form-select').eq(0).on('input', function(){
 $('.form-select').eq(0).on('input', function(){
 
     var value = $('.form-select').eq(0).val();
-    if (value == '모자') {
+    if (value == '모자' || value == '바지') {
         $('.form-select').eq(1).addClass('form-hide');
     }
 
