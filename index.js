@@ -60,27 +60,33 @@ document.querySelectorAll('.card-body p')[2].innerHTML = ' 가격 : ' + products
 
 
 $('.form-select').eq(0).on('input', function(){
+    var value = $(this).val();
 
-    var value = $('.form-select').eq(0).val();
-    if (value == '셔츠') {
+    if (value === '셔츠') {
         $('.form-select').eq(1).removeClass('form-hide');
+    } else if (value === '모자' || value === '바지') {
+        $('.form-select').eq(1).addClass('form-hide');
+    } else {
+        // Additional conditions can be added here if needed
     }
-
 });
 
-$('.form-select').eq(0).on('input', function(){
+$('.form-select').eq(1).on('input', function(){
+    var value = $(this).val();
+    
+    if (value === '바지') {
+        $('.form-select').eq(1).addClass('form-hide');
+        
+        // Clear existing options
+        $('.form-select').eq(1).empty();
 
-    var value = $('.form-select').eq(0).val();
-    if (value == '모자' || value == '바지') {
-        $('.form-select').eq(1).addClass('form-hide');
-    } else if(value == '바지'){
-        $('.form-select').eq(1).addClass('form-hide');
-        var 템플릿 = `<option>95</option>
-            <option>100</option>`;
-        $('.form-select').eq(1).append(템플릿);
+        // Append new options
+        var template = `<option>95</option>
+                        <option>100</option>`;
+        $('.form-select').eq(1).append(template);
     }
-
 });
+
 
 // var 셀렉트 = '<option>28</option> <option>30</option>'
 // document.querySelectorAll('.form-select').innerHTML = 셀렉트;
